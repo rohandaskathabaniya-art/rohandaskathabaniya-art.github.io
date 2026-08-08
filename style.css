@@ -1,27 +1,55 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 50px 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: white;
+
+    background:
+        linear-gradient(
+            rgba(5, 10, 25, 0.70),
+            rgba(5, 10, 25, 0.88)
+        ),
+        url("IMG_2525.HEIC* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 50px 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: white;
+
+    background:
+        linear-gradient(
+            rgba(5, 10, 25, 0.70),
+            rgba(5, 10, 25, 0.88)
+        ),
+        url("background.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Profile photo */
 img {
     width: 120px;
     height: 150px;
     object-fit: cover;
-    border-radius: 4px;
-    border: 2px solid white;
-}
-body {
-    margin: 0;
-    padding: 40px 20px;
-    text-align: center;
-    font-family: Arial, sans-serif;
-    background: #080b14;
-    color: white;
+    border-radius: 6px;
+    border: 3px solid rgba(255,255,255,0.9);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
 
-img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 3px solid white;
-}
-
+/* Premium animated name */
 .moving-name {
     font-size: clamp(32px, 7vw, 70px);
     font-weight: 800;
@@ -30,9 +58,9 @@ img {
     background: linear-gradient(
         90deg,
         white,
-        #6ea8ff,
+        #65aaff,
         white,
-        #6ea8ff,
+        #65aaff,
         white
     );
 
@@ -41,37 +69,113 @@ img {
     background-clip: text;
     color: transparent;
 
-    animation: gradientMove 5s linear infinite,
-               floating 3s ease-in-out infinite;
+    animation: gradient 5s linear infinite,
+               float 3s ease-in-out infinite;
 
-    filter: drop-shadow(0 0 15px rgba(100,160,255,.5));
+    filter: drop-shadow(0 0 15px rgba(80,150,255,0.5));
 }
 
-@keyframes gradientMove {
+@keyframes gradient {
     from {
         background-position: 0%;
     }
-
     to {
         background-position: 300%;
     }
 }
 
-@keyframes floating {
+@keyframes float {
     0%, 100% {
         transform: translateY(0);
     }
-
     50% {
         transform: translateY(-7px);
     }
+}
+
+/* Content */
+p, h2, ul {
+    text-shadow: 0 2px 8px rgba(0,0,0,0.7);
 }
 
 h2 {
     margin-top: 35px;
 }
 
-li {
-    margin: 8px;
+ul {
+    display: inline-block;
+    text-align: left;
+}");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
-body{background:#111;color:#fff;font-family:Arial;padding:40px;max-width:900px;margin:auto}
+
+/* Profile photo */
+img {
+    width: 120px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 3px solid rgba(255,255,255,0.9);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* Premium animated name */
+.moving-name {
+    font-size: clamp(32px, 7vw, 70px);
+    font-weight: 800;
+    letter-spacing: 3px;
+
+    background: linear-gradient(
+        90deg,
+        white,
+        #65aaff,
+        white,
+        #65aaff,
+        white
+    );
+
+    background-size: 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+    animation: gradient 5s linear infinite,
+               float 3s ease-in-out infinite;
+
+    filter: drop-shadow(0 0 15px rgba(80,150,255,0.5));
+}
+
+@keyframes gradient {
+    from {
+        background-position: 0%;
+    }
+    to {
+        background-position: 300%;
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-7px);
+    }
+}
+
+/* Content */
+p, h2, ul {
+    text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+}
+
+h2 {
+    margin-top: 35px;
+}
+
+ul {
+    display: inline-block;
+    text-align: left;
+}

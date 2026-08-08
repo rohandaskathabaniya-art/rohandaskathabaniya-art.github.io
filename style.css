@@ -1,1 +1,8 @@
+img {
+    width: 120px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 2px solid white;
+}
 body{background:#111;color:#fff;font-family:Arial;padding:40px;max-width:900px;margin:auto}

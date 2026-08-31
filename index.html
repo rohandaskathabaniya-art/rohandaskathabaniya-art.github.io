@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rohan Digital — Nepal's Digital Help Hub</title>
+<meta name="description" content="Rohan Digital — digital services, free tools, student resources and professional web solutions from Nepal.">
+<meta name="theme-color" content="#080a12">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <a class="logo" href="#home"><span>R</span> ROHAN<span class="soft">DIGITAL</span></a>
+  <button class="hamb" id="hamb">☰</button>
+  <nav id="nav">
+    <a href="#home">Home</a>
+    <a href="#discover">Discover</a><a href="#services">Services</a>
+    <a href="#tools">Free Tools</a>
+    <a href="#resources">Resources</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#about">About</a><a href="#faq">FAQ</a>
+    <a class="navorder" href="#contact">Order Now ↗</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+ <div class="hero-bg"></div>
+ <div class="hero-inner">
+   <div class="eyebrow">✦ DIGITAL SERVICES • FREE TOOLS • RESOURCES</div>
+   <h1>Everything digital.<br><span>Made simple.</span></h1>
+   <p class="hero-text">Websites, CVs, documents, designs and useful online tools — built for students, job seekers and small businesses in Nepal.</p>
+   <div class="actions"><a class="btn white" href="#services">Explore Services <b>→</b></a><a class="btn line" href="#tools">Try Free Tools</a></div>
+   <div class="stats"><div><b>06+</b><small>Services</small></div><div><b>04</b><small>Free Tools</small></div><div><b>24/7</b><small>Online access</small></div></div>
+ </div>
+ <div class="hero-panel">
+   <div class="panel-head"><span>ROHAN / DIGITAL</span><i>● ● ●</i></div>
+   <div class="panel-screen">
+     <div class="scan"></div>
+     <div class="big-r">R</div>
+     <strong>BUILD YOUR<br><em>DIGITAL FUTURE.</em></strong>
+     <small>Web · Career · Productivity</small>
+   </div>
+   <div class="mini-card one">⚡ Fast digital work</div>
+   <div class="mini-card two">✦ Premium presentation</div>
+ </div>
+</section>
+
+<div class="ticker"><span>WEBSITES</span> / <span>CV & RESUME</span> / <span>BUSINESS DIGITAL</span> / <span>FREE TOOLS</span> / <span>STUDENT RESOURCES</span> / <span>WEBSITES</span> / <span>CV & RESUME</span> / <span>BUSINESS DIGITAL</span></div>
+
+<section class="section" id="services">
+ <div class="section-head"><div><label>SERVICES</label><h2>Get the <i>result</i>,<br>not the hassle.</h2></div><p>Choose a service, send your requirements, and receive a customized digital result. Transparent starting prices.</p></div>
+ <div class="cards">
+  <article class="service"><div class="service-icon">⌘</div><span>01</span><h3>Portfolio Website</h3><p>Modern personal website for students, freelancers and professionals.</p><strong>Rs. 2,000<span>+</span></strong><button onclick="selectService('Portfolio Website')">Order service →</button></article>
+  <article class="service hot"><b class="popular">MOST POPULAR</b><div class="service-icon">CV</div><span>02</span><h3>CV + Cover Letter</h3><p>Professional job-application documents tailored to your information.</p><strong>Rs. 500<span>+</span></strong><button onclick="selectService('CV + Cover Letter')">Order service →</button></article>
+  <article class="service"><div class="service-icon">⌂</div><span>03</span><h3>Business Website</h3><p>Premium landing page for shops, services and small organizations.</p><strong>Rs. 4,000<span>+</span></strong><button onclick="selectService('Business Website')">Order service →</button></article>
+  <article class="service"><div class="service-icon">XLS</div><span>04</span><h3>Excel & Data</h3><p>Formatting, cleanup, tables, data entry and spreadsheet assistance.</p><strong>Rs. 500<span>+</span></strong><button onclick="selectService('Excel & Data Work')">Order service →</button></article>
+  <article class="service"><div class="service-icon">PDF</div><span>05</span><h3>Document Formatting</h3><p>Typing, formatting, conversion and professional digital documents.</p><strong>Rs. 300<span>+</span></strong><button onclick="selectService('Document Formatting')">Order service →</button></article>
+  <article class="service"><div class="service-icon">✦</div><span>06</span><h3>Custom Digital Work</h3><p>Have another digital task? Tell us what you need and request a quote.</p><strong>Custom<span> quote</span></strong><button onclick="selectService('Custom Digital Work')">Request quote →</button></article>
+ </div>
+</section>
+
+<section class="tools section" id="tools">
+ <div class="section-head"><div><label>FREE TOOLS</label><h2>Useful things,<br><i>free forever.</i></h2></div><p>Browser-based tools for everyday student and digital work. No account required.</p></div>
+ <div class="toolgrid">
+  <div class="tool"><small>01 / CALCULATOR</small><h3>Percentage</h3><div class="inputs"><input id="pa" type="number" placeholder="25"><span>% of</span><input id="pb" type="number" placeholder="800"></div><button onclick="percentage()">Calculate</button><output id="po">Result appears here</output></div>
+  <div class="tool"><small>02 / STUDENT</small><h3>GPA Calculator</h3><p class="muted">Enter up to 6 subject grades and credits.</p><div class="gpa-row"><input id="g1" type="number" step=".01" placeholder="Grade"><input id="c1" type="number" placeholder="Credit"></div><div class="gpa-row"><input id="g2" type="number" step=".01" placeholder="Grade"><input id="c2" type="number" placeholder="Credit"></div><div class="gpa-row"><input id="g3" type="number" step=".01" placeholder="Grade"><input id="c3" type="number" placeholder="Credit"></div><button onclick="gpa()">Calculate GPA</button><output id="go">Result appears here</output></div>
+  <div class="tool"><small>03 / PRODUCTIVITY</small><h3>Word Counter</h3><textarea id="wc" placeholder="Paste or type your text..."></textarea><output id="wo">0 words · 0 characters</output></div>
+  <div class="tool"><small>04 / DIGITAL</small><h3>QR Generator</h3><input id="qr" placeholder="Enter URL or text"><button onclick="qrgen()">Generate QR</button><div id="qrout" class="qr">QR appears here</div></div>
+ </div>
+</section>
+
+<section class="section resources" id="resources">
+ <div class="section-head"><div><label>RESOURCES</label><h2>Learn something<br><i>useful.</i></h2></div><p>Start with practical guides. More original resources can be added as the site grows.</p></div>
+ <div class="resource-grid">
+  <article><span>CAREER / 01</span><h3>How to build a strong CV</h3><p>A practical checklist for students and first-time job seekers.</p><a href="#contact">Need help? →</a></article>
+  <article><span>STUDENT / 02</span><h3>Build your first portfolio</h3><p>What to include in a personal website when you have little experience.</p><a href="#services">Build one →</a></article>
+  <article><span>COMPUTER / 03</span><h3>Start learning web development</h3><p>A simple HTML → CSS → JavaScript learning path.</p><a href="#contact">Ask us →</a></article>
+  <article><span>BUSINESS / 04</span><h3>Why a small business needs a website</h3><p>How a clear online presence can make it easier for customers to find you.</p><a href="#services">Get a site →</a></article>
+ </div>
+</section>
+
+<section class="section portfolio" id="portfolio">
+ <div class="section-head"><div><label>PORTFOLIO</label><h2>Work that feels<br><i>like you.</i></h2></div><p>Replace these demo cards with your real completed projects and screenshots as you get clients.</p></div>
+ <div class="portfolio-grid">
+  <div class="project p1"><span>WEB DESIGN</span><h3>Personal Portfolio</h3><p>Clean professional profile site</p></div>
+  <div class="project p2"><span>CAREER</span><h3>Modern CV System</h3><p>Application-ready documents</p></div>
+  <div class="project p3"><span>BUSINESS</span><h3>Local Business Landing Page</h3><p>Simple conversion-focused website</p></div>
+ </div>
+</section>
+
+<section class="section about" id="about">
+ <div class="about-card"><div class="about-mark">R</div><div><label>ABOUT ROHAN DIGITAL</label><h2>A small digital studio<br>with a <i>big direction.</i></h2><p>Rohan Digital is an independent online service platform focused on making useful digital work accessible and simple — from websites and career documents to browser tools and learning resources.</p><a href="#contact" class="textlink">Work with us →</a></div></div>
+</section>
+
+<section class="contact section" id="contact">
+ <div class="contact-box">
+  <div><label>START A PROJECT</label><h2>Have a task?<br><i>Let's talk.</i></h2><p>Send your requirements. Your email app will open with the project information ready to send.</p><a class="email" href="mailto:contact@rohandaskathabaniya.com.np">contact@rohandaskathabaniya.com.np</a></div>
+  <form id="form"><label>Name<input name="name" required placeholder="Your name"></label><label>Service<select id="service" name="service"><option>Portfolio Website</option><option>CV + Cover Letter</option><option>Business Website</option><option>Excel & Data Work</option><option>Document Formatting</option><option>Custom Digital Work</option></select></label><label>Budget<input name="budget" placeholder="Optional"></label><label>Details<textarea name="details" required placeholder="Tell me what you need..."></textarea></label><button class="submit" type="submit">Send Project Request ↗</button></form>
+ </div>
+</section>
+</main>
+
+<footer><div class="logo"><span>R</span> ROHAN<span class="soft">DIGITAL</span></div><div>© 2026 Rohan Digital</div><div><a href="#services">Services</a> · <a href="#tools">Tools</a> · <a href="#contact">Contact</a></div></footer>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "posts": [
+    {
+      "slug": "why-i-built-this-site",
+      "title": "Why I built this website",
+      "date": "2026-09-20",
+      "summary": "A short note on what this site is for and how I plan to use it.",
+      "tags": ["Journey", "Web development"],
+      "published": true,
+      "body": "I am studying B.E. Computer Engineering in Nepal and learning to build real things with code.\n\nThis website is my public workspace. It holds my projects, my CV, a few free tools and, over time, notes on what I learn.\n\n## What you will find here\n\n- Projects, each marked as completed, in progress or planned\n- Free browser tools that keep your data on your device\n- Short posts about what I am learning\n\n## What I am not claiming\n\nI do not have professional experience yet. I am a student building skills in public, and I am looking for internships and small projects where I can learn from real work."
+    }
+  ]
+}

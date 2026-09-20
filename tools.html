@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Tools | Rohan Das Kathabaniya</title>
+<meta name="description" content="Free browser tools: GPA and CGPA calculator, percentage, age, word counter, unit converter, salary estimate and job application tracker. Private, no sign-up.">
+<link rel="canonical" href="https://rohandaskathabaniya.com.np/tools.html">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Rohan Das Kathabaniya">
+<meta name="theme-color" content="#0B1220">
+<!-- Open Graph / social sharing -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Rohan Das | Computer Engineering &amp; Technology">
+<meta property="og:title" content="Free Tools | Rohan Das Kathabaniya">
+<meta property="og:description" content="Free browser tools: GPA and CGPA calculator, percentage, age, word counter, unit converter, salary estimate and job application tracker. Private, no sign-up.">
+<meta property="og:url" content="https://rohandaskathabaniya.com.np/tools.html">
+<meta property="og:image" content="https://rohandaskathabaniya.com.np/assets/og-image.png">
+<meta property="og:image:alt" content="Rohan Das Kathabaniya, B.E. Computer Engineering student">
+<meta name="twitter:card" content="summary_large_image">
+<!-- Google Search Console verification goes here later (a tag Google gives you). Do not invent one. -->
+<link rel="icon" href="assets/favicon.ico" sizes="32x32">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&amp;family=IBM+Plex+Sans+Condensed:wght@500;600;700&amp;display=swap">
+<link rel="stylesheet" href="style.css">
+<script>try{var t=localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body data-page="tools">
+<a class="skip" href="#main">Skip to content</a>
+<div id="site-header"></div>
+<main id="main">
+<section class="hero" style="padding-block:clamp(32px,5vw,56px)">
+  <div class="container">
+    <h1>Free tools</h1>
+    <p class="lead">Eight small tools that run entirely in your browser. Nothing you enter is uploaded or stored on a server.</p>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="tabs" role="tablist" aria-label="Choose a tool">
+<button type="button" role="tab" data-tool="gpa" aria-selected="false" aria-controls="panel-gpa">GPA</button>
+<button type="button" role="tab" data-tool="cgpa" aria-selected="false" aria-controls="panel-cgpa">CGPA</button>
+<button type="button" role="tab" data-tool="percentage" aria-selected="false" aria-controls="panel-percentage">Percentage</button>
+<button type="button" role="tab" data-tool="age" aria-selected="false" aria-controls="panel-age">Age</button>
+<button type="button" role="tab" data-tool="wordcount" aria-selected="false" aria-controls="panel-wordcount">Word and character counter</button>
+<button type="button" role="tab" data-tool="units" aria-selected="false" aria-controls="panel-units">Unit converter</button>
+<button type="button" role="tab" data-tool="salary" aria-selected="false" aria-controls="panel-salary">Salary</button>
+<button type="button" role="tab" data-tool="tracker" aria-selected="false" aria-controls="panel-tracker">Job tracker</button>
+    </div>
+
+    <div class="card tool-panel" role="tabpanel" id="panel-gpa" data-panel="gpa">
+      <h2>GPA calculator</h2>
+      <p class="muted">Add each subject with its grade and credit hours. Uses a common 4.0 scale, so check it against your own university.</p>
+      <div id="gpa-rows" class="tool-rows"></div>
+      <div class="btn-row"><button id="gpa-add" class="btn btn-ghost" type="button">Add subject</button><button id="gpa-calc" class="btn btn-primary" type="button">Calculate GPA</button></div>
+      <div id="gpa-out" class="result" aria-live="polite" hidden></div>
+    </div>
+
+    <div class="card tool-panel" role="tabpanel" id="panel-cgpa" data-panel="cgpa" hidden>
+      <h2>CGPA calculator</h2>
+      <p class="muted">Enter each semester's GPA and credit hours to get your cumulative GPA.</p>
+      <div id="cgpa-rows" class="tool-rows"></div>
+      <div class="btn-row"><button id="cgpa-add" class="btn btn-ghost" type="button">Add semester</button><button id="cgpa-calc" class="btn btn-primary" type="button">Calculate CGPA</button></div>
+      <div id="cgpa-out" class="result" aria-live="polite" hidden></div>
+    </div>
+
+    <div class="card tool-panel" role="tabpanel" id="panel-percentage" data-panel="percentage" hidden>
+      <h2>Percentage calculator</h2>
+      <div class="field"><label for="pct-mode">What do you want to find?</label>
+        <select id="pct-mode"><option value="of">X% of a number</option><option value="is">X is what % of Y</option><option value="change">Percentage change from X to Y</option></select></div>
+      <div class="form-row two">
+        <div class="field"><label id="pct-la" for="pct-a">Percentage (%)</label><input id="pct-a" type="number" step="any" inputmode="decimal"></div>
+        <div class="field"><label id="pct-lb" for="pct-b">Number</label><input id="pct-b" type="number" step="any" inputmode="decimal"></div>
+      </div>
+      <button id="pct-calc" class="btn btn-primary" type="button">Calculate</button>
+      <div id="pct-out" class="result" aria-live="polite" hidden></div>
+    </div>
+
+    <div class="card tool-panel" role="tabpanel" id="panel-age" data-panel="age" hidden>
+      <h2>Age calculator</h2>
+      <div class="form-row two">
+        <div class="field"><label for="age-dob">Date of birth</label><input id="age-dob" type="date"></div>
+        <div class="field"><label for="age-asof">Age on this date</label><input id="age-asof" type="date"></div>
+      </div>
+      <button id="age-calc" class="btn btn-primary" type="button">Calculate age</button>
+      <div id="age-out" class="result" aria-live="polite" hidden></div>
+    </div>
+
+    <div class="card tool-panel" role="tabpanel" id="panel-wordcount" data-panel="wordcount" hidden>
+      <h2>Word and character counter</h2>
+      <div class="field"><label for="wc-text">Type or paste your text</label><textarea id="wc-text" rows="8"></textarea></div>
+      <div id="wc-out" class="stats" aria-live="polite"></div>
+      <div class="btn-row"><button id="wc-clear" class="btn btn-ghost" type="button">Clear text</button></div>
+    </div>
+
+    <div class="card tool-panel" role="tabpanel" id="panel-units" data-panel="units" hidden>
+      <h2>Unit converter</h2>
+      <p class="muted">Includes Nepali land units (ropani and aana).</p>
+      <div class="form-row three">
+        <div class="field"><label for="u-cat">Type</label><select id="u-cat"></select></div>
+        <div class="field"><label for="u-from">From</label><select id="u-from"></select></div>
+        <div class="field"><label for="u-to">To</label><select id="u-to"></select></div>
+      </div>
+      <div class="field"><label for="u-val">Value</label><input id="u-val" type="number" step="any" inputmode="decimal" value="1"></div>
+      <button id="u-swap" class="btn btn-ghost" type="button">Swap units</button>
+      <div id="u-out" class="result" aria-live="polite" hidden></div>
+    </div>
+
+    <div class="card tool-panel" role="tabpanel" id="panel-salary" data-panel="salary" hidden>
+      <h2>Simple salary calculator</h2>
+      <div class="notice">Tax rules differ by country and change each year. Enter percentages from your own payslip or tax slab. This is an estimate, not tax advice.</div>
+      <div class="form-row three">
+        <div class="field"><label for="sal-cur">Currency label</label><input id="sal-cur" type="text" value="NPR" maxlength="6"></div>
+        <div class="field"><label for="sal-gross">Gross monthly salary</label><input id="sal-gross" type="number" min="0" step="any" inputmode="decimal"></div>
+        <div class="field"><label for="sal-months">Months paid per year</label><input id="sal-months" type="number" min="1" max="24" value="12"></div>
+      </div>
+      <div class="form-row three">
+        <div class="field"><label for="sal-tax">Income tax (%)</label><input id="sal-tax" type="number" min="0" max="100" step="any" value="0" inputmode="decimal"></div>
+        <div class="field"><label for="sal-other">Other deductions (%)</label><input id="sal-other" type="number" min="0" max="100" step="any" value="0" inputmode="decimal"></div>
+        <div class="field"><label for="sal-hours">Hours worked per week</label><input id="sal-hours" type="number" min="1" max="100" value="40"></div>
+      </div>
+      <button id="sal-calc" class="btn btn-primary" type="button">Calculate</button>
+      <div id="sal-out" class="result" aria-live="polite" hidden></div>
+    </div>
+
+    <div class="card tool-panel" role="tabpanel" id="panel-tracker" data-panel="tracker" hidden>
+      <h2>Job application tracker</h2>
+      <div class="notice info">Your list is saved only in this browser on this device. It is not uploaded. Clearing your browser data will remove it, so use Export CSV to keep a copy.</div>
+      <div id="job-warning" class="notice error" hidden>Your browser is blocking storage, so this list will disappear when you close the page. Export CSV to keep a copy.</div>
+      <form id="job-form">
+        <div class="form-row two">
+          <div class="field"><label for="job-company">Company</label><input id="job-company" name="company" type="text" required autocomplete="off"></div>
+          <div class="field"><label for="job-role">Role</label><input id="job-role" name="role" type="text" required autocomplete="off"></div>
+        </div>
+        <div class="form-row two">
+          <div class="field"><label for="job-date">Date applied</label><input id="job-date" name="date" type="date"></div>
+          <div class="field"><label for="job-status">Status</label><select id="job-status" name="status"><option>Wishlist</option><option selected>Applied</option><option>Interview</option><option>Offer</option><option>Rejected</option></select></div>
+        </div>
+        <div class="field"><label for="job-notes">Notes or link</label><textarea id="job-notes" name="notes" rows="2"></textarea></div>
+        <button class="btn btn-primary" type="submit">Add application</button>
+      </form>
+      <p id="job-summary" class="muted" aria-live="polite" style="margin-top:20px"></p>
+      <div id="job-list"></div>
+      <div class="btn-row"><button id="job-csv" class="btn btn-ghost btn-small" type="button">Export CSV</button><button id="job-clear" class="btn btn-danger btn-small" type="button">Delete all</button></div>
+    </div>
+  </div>
+</section>
+
+</main>
+<div id="site-footer"></div>
+<noscript><p style="padding:16px;text-align:center">This site works best with JavaScript turned on. You can still email me at contact@rohandaskathabaniya.com.np.</p></noscript>
+<script src="script.js" defer></script>
+<script src="tools.js" defer></script>
+
+</body>
+</html>

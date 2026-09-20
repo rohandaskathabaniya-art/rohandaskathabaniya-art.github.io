@@ -1,0 +1,69 @@
+{
+  "name": "Rohan Das Kathabaniya",
+  "email": "contact@rohandaskathabaniya.com.np",
+  "linkedin": "https://www.linkedin.com/in/rohan-das-kathabaniya-435199326",
+  "github": "https://github.com/rohandaskathabaniya-art",
+  "location": "Nepal",
+  "availability": {
+    "open": true,
+    "text": "Open to Internships, Freelance Projects & Entry-Level Opportunities"
+  },
+  "intro": "I am a Computer Engineering student in Nepal building practical technology skills and real projects alongside my degree. I focus on web development, AI-assisted work and software quality, and I am looking for a first internship or entry-level role where I can keep learning by doing.",
+  "learning": ["JavaScript", "Python", "SQL", "React", "Git and GitHub", "Software testing"],
+  "skills": [
+    {
+      "category": "Programming",
+      "items": [
+        {"name": "JavaScript", "level": "learning"},
+        {"name": "Python", "level": "learning"},
+        {"name": "C / C++", "level": "learning"}
+      ]
+    },
+    {
+      "category": "Web",
+      "items": [
+        {"name": "HTML", "level": "working"},
+        {"name": "CSS", "level": "working"},
+        {"name": "JavaScript (browser)", "level": "learning"},
+        {"name": "React", "level": "learning"},
+        {"name": "Node.js", "level": "learning"}
+      ]
+    },
+    {
+      "category": "Database",
+      "items": [
+        {"name": "SQL", "level": "learning"},
+        {"name": "MySQL", "level": "learning"},
+        {"name": "PostgreSQL", "level": "learning"}
+      ]
+    },
+    {
+      "category": "Tools",
+      "items": [
+        {"name": "Git", "level": "working"},
+        {"name": "GitHub", "level": "working"},
+        {"name": "VS Code", "level": "working"},
+        {"name": "Postman", "level": "learning"}
+      ]
+    },
+    {
+      "category": "AI",
+      "items": [
+        {"name": "AI tools", "level": "working"},
+        {"name": "Prompt engineering", "level": "working"},
+        {"name": "LLM APIs", "level": "learning"},
+        {"name": "AI automation", "level": "learning"}
+      ]
+    },
+    {
+      "category": "Other",
+      "items": [
+        {"name": "Manual testing", "level": "learning"},
+        {"name": "REST APIs", "level": "learning"},
+        {"name": "Documentation", "level": "working"},
+        {"name": "MS Word", "level": "working"},
+        {"name": "Basic Excel", "level": "working"}
+      ]
+    }
+  ]
+}

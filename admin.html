@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Admin | Rohan Das Kathabaniya</title>
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="referrer" content="no-referrer">
+<!-- Strict security policy: this page can only run its own script and only talk to GitHub. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src https://api.github.com; base-uri 'none'; form-action 'none'">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="admin.css">
+</head>
+<body>
+<div class="container admin-wrap">
+
+  <div class="admin-top">
+    <h1>Site admin</h1>
+    <a class="btn btn-small btn-ghost" href="index.html">View website</a>
+  </div>
+
+  <div id="msg" class="notice info" role="status" hidden></div>
+
+  <!-- Sign-in screen -->
+  <section id="login" class="card" aria-labelledby="login-title">
+    <h2 id="login-title">Sign in with your GitHub token</h2>
+    <p>This page has no password. Instead, GitHub checks a private token that only you have. Without it, nothing on the site can be changed, even though this page is public.</p>
+    <div id="login-error" class="notice error" role="alert" hidden></div>
+    <form id="login-form" autocomplete="off">
+      <div class="field">
+        <label for="token">GitHub fine-grained token</label>
+        <input id="token" type="password" autocomplete="off" spellcheck="false" placeholder="github_pat_...">
+        <p class="help">Need a token? Follow the steps below. Never share it with anyone.</p>
+      </div>
+      <div class="field check">
+        <input id="remember" type="checkbox">
+        <label for="remember">Keep me signed in until I close this tab</label>
+      </div>
+      <button id="login-btn" class="btn btn-primary" type="submit">Sign in</button>
+    </form>
+    <details class="callout">
+      <summary><strong>How to create the token (2 minutes)</strong></summary>
+      <ol class="help-steps">
+        <li>On GitHub, click your profile picture, then <strong>Settings</strong>.</li>
+        <li>Scroll down and click <strong>Developer settings</strong>, then <strong>Personal access tokens</strong>, then <strong>Fine-grained tokens</strong>.</li>
+        <li>Click <strong>Generate new token</strong>. Name it <code>Website admin</code>.</li>
+        <li>Expiration: choose <strong>30 days</strong>.</li>
+        <li>Repository access: choose <strong>Only select repositories</strong> and pick <code>rohandaskathabaniya-art.github.io</code>.</li>
+        <li>Under Repository permissions, set <strong>Contents</strong> to <strong>Read and write</strong>. Leave everything else alone.</li>
+        <li>Click <strong>Generate token</strong>, copy it right away and paste it above. GitHub shows it only once.</li>
+      </ol>
+    </details>
+  </section>
+
+  <!-- Dashboard (hidden until signed in) -->
+  <section id="dash" hidden>
+    <div class="btn-row no-print">
+      <button id="reload" class="btn btn-small btn-ghost" type="button">Reload from GitHub</button>
+      <button id="signout" class="btn btn-small btn-secondary" type="button">Sign out</button>
+    </div>
+    <div class="tabs" role="tablist" aria-label="Admin sections">
+      <button type="button" role="tab" data-tab="projects" aria-selected="true">Projects</button>
+      <button type="button" role="tab" data-tab="blog" aria-selected="false">Blog</button>
+      <button type="button" role="tab" data-tab="settings" aria-selected="false">Site settings</button>
+      <button type="button" role="tab" data-tab="help" aria-selected="false">Help and security</button>
+    </div>
+
+    <div class="card" data-tabpanel="projects"></div>
+    <div class="card" data-tabpanel="blog" hidden></div>
+    <div class="card" data-tabpanel="settings" hidden></div>
+
+    <div class="card" data-tabpanel="help" hidden>
+      <h2>Help and security</h2>
+      <h3>How saving works</h3>
+      <p>Each time you click <strong>Save and publish</strong>, this page sends your change to GitHub as a normal commit. GitHub Pages then rebuilds your site, which takes about a minute. Every change is recorded in your repository history, so you can always undo a mistake there.</p>
+      <h3>Keeping it safe</h3>
+      <ul class="checklist">
+        <li>Turn on two-factor authentication for your GitHub account.</li>
+        <li>Only use a token limited to this one repository, with 30-day expiry.</li>
+        <li>Never paste the token into the code, a chat, or a screenshot.</li>
+        <li>Sign out when you finish. You are also signed out after 20 minutes without activity.</li>
+        <li>If you think the token leaked, delete it in GitHub (Settings, Developer settings) straight away.</li>
+        <li>Use this page only on your own devices.</li>
+      </ul>
+      <h3>Editing skills, resume text or other pages</h3>
+      <p>Open the file on GitHub, click the pencil icon, edit, and click <strong>Commit changes</strong>. Skills live in <code>site.json</code>. Change <code>"level"</code> from <code>"learning"</code> to <code>"working"</code> only when you can genuinely use that skill for small real tasks.</p>
+    </div>
+  </section>
+</div>
+<script src="admin.js"></script>
+</body>
+</html>

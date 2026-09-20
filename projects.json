@@ -1,23 +1,6 @@
 {
   "projects": [
     {
-      "id": "gpa-calculator",
-      "name": "Student GPA Calculator",
-      "icon": "🎓",
-      "status": "completed",
-      "summary": "Adds up subject grades and credit hours to calculate a semester GPA.",
-      "problem": "Students often calculate GPA by hand and make mistakes with credit weighting.",
-      "tech": [
-        "HTML",
-        "CSS",
-        "JavaScript"
-      ],
-      "github": "https://github.com/rohandaskathabaniya-art/rohandaskathabaniya-art.github.io",
-      "live": "tools.html#gpa",
-      "details": "Runs entirely in the browser. Uses a common 4.0 grade scale, so check it against your own university's grading scale.",
-      "featured": true
-    },
-    {
       "id": "personal-portfolio",
       "name": "Personal Portfolio",
       "icon": "🌐",
@@ -33,6 +16,23 @@
       "github": "https://github.com/rohandaskathabaniya-art/rohandaskathabaniya-art.github.io",
       "live": "https://rohandaskathabaniya.com.np",
       "details": "A static website with no backend. Project, blog and settings content lives in JSON files that I edit through a private admin page, which saves changes directly to GitHub.",
+      "featured": true
+    },
+    {
+      "id": "gpa-calculator",
+      "name": "Student GPA Calculator",
+      "icon": "🎓",
+      "status": "completed",
+      "summary": "Adds up subject grades and credit hours to calculate a semester GPA.",
+      "problem": "Students often calculate GPA by hand and make mistakes with credit weighting.",
+      "tech": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "github": "https://github.com/rohandaskathabaniya-art/rohandaskathabaniya-art.github.io",
+      "live": "tools.html#gpa",
+      "details": "Runs entirely in the browser. Uses a common 4.0 grade scale, so check it against your own university's grading scale.",
       "featured": true
     },
     {

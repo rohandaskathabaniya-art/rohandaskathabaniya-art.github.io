@@ -1,29 +1,38 @@
 {
   "projects": [
     {
-      "id": "personal-portfolio",
-      "name": "Personal Portfolio",
-      "icon": "🌐",
-      "status": "in-progress",
-      "summary": "This website: portfolio, online CV, services page and free tools, hosted free on GitHub Pages.",
-      "problem": "Recruiters and clients need one place to see who I am, what I am learning and what I can build.",
-      "tech": ["HTML", "CSS", "JavaScript", "GitHub Pages"],
-      "github": "https://github.com/rohandaskathabaniya-art/rohandaskathabaniya-art.github.io",
-      "live": "https://rohandaskathabaniya.com.np",
-      "details": "A static website with no backend. Project, blog and settings content lives in JSON files that I edit through a private admin page, which saves changes directly to GitHub.",
-      "featured": true
-    },
-    {
       "id": "gpa-calculator",
       "name": "Student GPA Calculator",
       "icon": "🎓",
       "status": "completed",
       "summary": "Adds up subject grades and credit hours to calculate a semester GPA.",
       "problem": "Students often calculate GPA by hand and make mistakes with credit weighting.",
-      "tech": ["HTML", "CSS", "JavaScript"],
+      "tech": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
       "github": "https://github.com/rohandaskathabaniya-art/rohandaskathabaniya-art.github.io",
       "live": "tools.html#gpa",
       "details": "Runs entirely in the browser. Uses a common 4.0 grade scale, so check it against your own university's grading scale.",
+      "featured": true
+    },
+    {
+      "id": "personal-portfolio",
+      "name": "Personal Portfolio",
+      "icon": "🌐",
+      "status": "in-progress",
+      "summary": "This website: portfolio, online CV, services page and free tools, hosted free on GitHub Pages.",
+      "problem": "Recruiters and clients need one place to see who I am, what I am learning and what I can build.",
+      "tech": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "GitHub Pages"
+      ],
+      "github": "https://github.com/rohandaskathabaniya-art/rohandaskathabaniya-art.github.io",
+      "live": "https://rohandaskathabaniya.com.np",
+      "details": "A static website with no backend. Project, blog and settings content lives in JSON files that I edit through a private admin page, which saves changes directly to GitHub.",
       "featured": true
     },
     {
@@ -33,7 +42,11 @@
       "status": "completed",
       "summary": "Three quick calculations: percent of a number, what percent one number is of another, and percent change.",
       "problem": "Everyday percentage questions are easy to get wrong under time pressure.",
-      "tech": ["HTML", "CSS", "JavaScript"],
+      "tech": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
       "github": "https://github.com/rohandaskathabaniya-art/rohandaskathabaniya-art.github.io",
       "live": "tools.html#percentage",
       "details": "Browser-only calculator with three modes. No data leaves your device.",
@@ -46,7 +59,11 @@
       "status": "completed",
       "summary": "Works out exact age in years, months and days, plus days until the next birthday.",
       "problem": "Forms and applications often ask for an exact age on a given date.",
-      "tech": ["HTML", "CSS", "JavaScript"],
+      "tech": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
       "github": "https://github.com/rohandaskathabaniya-art/rohandaskathabaniya-art.github.io",
       "live": "tools.html#age",
       "details": "Handles month lengths and leap years with plain JavaScript date maths.",
@@ -59,7 +76,11 @@
       "status": "completed",
       "summary": "Live word, character, sentence and paragraph counts with a reading-time estimate.",
       "problem": "Assignments, applications and posts often have strict word or character limits.",
-      "tech": ["HTML", "CSS", "JavaScript"],
+      "tech": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
       "github": "https://github.com/rohandaskathabaniya-art/rohandaskathabaniya-art.github.io",
       "live": "tools.html#wordcount",
       "details": "Counts update as you type. Text is never uploaded anywhere.",
@@ -72,7 +93,12 @@
       "status": "completed",
       "summary": "Keeps a list of applications with status, date and notes, saved in your own browser.",
       "problem": "Job hunters lose track of where they applied and what happened next.",
-      "tech": ["HTML", "CSS", "JavaScript", "localStorage"],
+      "tech": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "localStorage"
+      ],
       "github": "https://github.com/rohandaskathabaniya-art/rohandaskathabaniya-art.github.io",
       "live": "tools.html#tracker",
       "details": "First version stores data only in the browser you use (no account, no server). CSV export is included. Syncing across devices is planned for later.",
@@ -85,7 +111,11 @@
       "status": "planned",
       "summary": "A small system to record students, courses and marks.",
       "problem": "Small institutes often track student records in scattered spreadsheets.",
-      "tech": ["SQL", "Node.js", "React"],
+      "tech": [
+        "SQL",
+        "Node.js",
+        "React"
+      ],
       "github": "",
       "live": "",
       "details": "Planned. Will be built after I finish learning SQL and basic backend development.",
@@ -98,7 +128,10 @@
       "status": "planned",
       "summary": "Log daily spending and see totals by category.",
       "problem": "Students on a budget struggle to see where their money goes.",
-      "tech": ["JavaScript", "Chart library"],
+      "tech": [
+        "JavaScript",
+        "Chart library"
+      ],
       "github": "",
       "live": "",
       "details": "Planned. Will start as a browser-only app and may get accounts later.",
@@ -111,7 +144,10 @@
       "status": "planned",
       "summary": "Shows the weather for a chosen city using a free public API.",
       "problem": "Practice project for calling REST APIs and handling errors and loading states.",
-      "tech": ["JavaScript", "REST API"],
+      "tech": [
+        "JavaScript",
+        "REST API"
+      ],
       "github": "",
       "live": "",
       "details": "Planned. This is my main practice project for working with REST APIs.",
@@ -124,7 +160,10 @@
       "status": "planned",
       "summary": "A study helper that summarises notes and creates practice questions.",
       "problem": "Turning long lecture notes into revision material takes hours.",
-      "tech": ["JavaScript", "LLM API"],
+      "tech": [
+        "JavaScript",
+        "LLM API"
+      ],
       "github": "",
       "live": "",
       "details": "Planned. Needs a small server-side proxy to keep API keys private, so it will come after the basics.",
